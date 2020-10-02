@@ -2,6 +2,10 @@
 
 New readme
 
+| Command | Details |
+| :-: | :-: |
+|**git** remote - v |Remote (repo) URL 
+
 **git** branch -a
 
 **git** branch *branch-name*
