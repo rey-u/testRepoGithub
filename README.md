@@ -3,7 +3,7 @@
 New readme
 
 | Command | Details |
-| :-: | :-: |
+| :-- | :-: |
 |**git** remote - v |Remote (repo) URL 
 |**git** branch -a| List branches
 |**git** branch *branch-name*| Create branch with *branch-name*
