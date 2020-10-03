@@ -5,14 +5,10 @@ New readme
 | Command | Details |
 | :-: | :-: |
 |**git** remote - v |Remote (repo) URL 
-
-**git** branch -a
-
-**git** branch *branch-name*
-
-**git** checkout *branch-name*
-
-**git** status
+|**git** branch -a| List branches
+|**git** branch *branch-name*| Create branch with *branch-name*
+|**git** checkout *branch-name*|Work in *branch-name*
+|**git** status|View changes and staging
 
 **git** add -A
 
