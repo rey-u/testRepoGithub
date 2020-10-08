@@ -1,22 +1,28 @@
 # testRepoGithub
 
 ## getting started
-| Command                               | Details 
-| :--                                   | :-: 
-|**git** init                           |initializes a git directory
-|**git** config --global user.name "*name*"   |sets user name
-|**git** config --global user.email "*email*" |sets user email
-|**git** config --global --list         |lists config settings
-|**git** remote add origin *URL*        |creates a new remote called origin
-|**git** remote - v                     |displays remote URL 
+| Command                               | Action 
+| :--                                   | :--
+|**git** config --global user.name "*name*"   |set user name
+|**git** config --global user.email "*email*" |set user email
+|**git** init                           |initialize a git directory
+|**git** remote add origin *URL*        |create a new remote called origin
+
+
+## informational
+| Command                               | Action
+| :--                                   | :-- 
+|**git** config --global --list         |list config settings
+|**git** remote - v                     |display remote URL 
+|**git** branch -a                      |list branches
+|**git** status                         |View changes and staging
+
 
 ## common tasks
-| Command                               | Details 
-| :--                                   | :-: 
-|**git** branch -a                      | List branches
+| Command                               | Action
+| :--                                   | :-- 
 |**git** branch *branch-name*           | Create branch with *branch-name*
 |**git** checkout *branch-name*         |Work in *branch-name*
-|**git** status                         |View changes and staging
 |**git** add -A                         |add all modified files to the staging area
 **git** commit -m "*message*"           |commits the files in the staging area
 |**git** push -u origin *branch-Name*   |
