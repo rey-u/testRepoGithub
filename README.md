@@ -34,6 +34,6 @@ Source: [gitglossary][1]
 
 [1]: https://git-scm.com/docs/gitglossary
 
-`git pull` ~= `git fetch` + `git merge FETCH_HEAD`
-`git pull` merges into the _current_ branch
+`git pull` ~= `git fetch` + `git merge FETCH_HEAD`  
+`git pull` merges into the _current_ branch  
 `git push` does not automatically merges
