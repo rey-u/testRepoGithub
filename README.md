@@ -26,6 +26,7 @@
 |**git** branch -d *branch-to-be-deleted*  |
 |**git** push origin --delete *branch-to-be-deleted*  |
 |**git** push origin master             |
+|**git** push --set-upstream origin master            |
 
 ## What is a commit?
    commit  
