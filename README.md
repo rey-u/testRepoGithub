@@ -47,6 +47,14 @@
 |delete working branch               |`git` branch -d *branch-name*
 |push updated master to remote repo  |`git` push origin master
 
+## Update a forked repo on GitHub
+As your fork only exists on GitHub, and GitHub does not have tools for doing merges through the web interface, you must do the upstream merge locally and then push the changes back to your fork.
+
+1. `git` remote add upstream *URL*
+1. `git` fetch upstream
+1. `git` checkout master 
+1. `git` rebase upstream/master
+1. `git` push -f origin master
 
 
 ## What is a commit?
