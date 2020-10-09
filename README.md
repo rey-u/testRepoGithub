@@ -1,8 +1,8 @@
 # testRepoGithub
 
 ## getting started
-| Command                               | Action 
-| :--                                   | :--
+| Command                             | Action 
+| :--                                 | :--
 |`git` config --global user.name "*name*"   |set user name
 |`git` config --global user.email "*email*" |set user email
 |`git` init                           |initialize a git directory
@@ -10,17 +10,19 @@
 
 
 ## informational
-| Command                               | Action
-| :--                                   | :-- 
+| Command                             | Action
+| :--                                 | :--
+|`git` --version                      |display git version
 |`git` config --global --list         |list config settings
 |`git` remote - v                     |display remote URL 
 |`git` branch -a                      |list branches
-|`git` status                         |View changes and staging
+|`git` status                         |display changes and staging
+|`git` log                            |view commit history and hashes
 
 
 ## common tasks
-| Command                               | Action
-| :--                                   | :-- 
+| Command                             | Action
+| :--                                 | :-- 
 |`git` branch *branch-name*           |create branch with *branch-name*
 |`git` checkout *branch-name*         |perform changes in *branch-name*
 |`git` checkout -b *branch-name*      |create and checkout a new branch
