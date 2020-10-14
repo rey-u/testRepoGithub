@@ -1,53 +1,64 @@
 # testRepoGithub
 
 ## getting started
-| Command                             | Action 
-| :--                                 | :--
-|`git` config --global user.name "*name*"   |set user name
-|`git` config --global user.email "*email*" |set user email
-|`git` init                           |initialize a git directory
-|`git` remote add origin *URL*        |create a new remote called origin
+| Command                                  | Action 
+| :--                                      | :--
+|`git` config --global user.name *name*    |set user name
+|`git` config --global user.email *email*  |set user email
+|`git` init                                |initialize a git directory
+|`git` remote add origin *URL*             |create a new remote called origin
 
 
 ## informational
-| Command                             | Action
-| :--                                 | :--
-|`git` --version                      |display git version
-|`git` config --global --list         |list config settings
-|`git` remote - v                     |display remote URL 
-|`git` branch -a                      |list branches
-|`git` status                         |display changes and staging
-|`git` log                            |view commit history and hashes
+| Command                       | Action
+| :--                           | :--
+|`git` --version                |display git version
+|`git` config --global --list   |list config settings
+|`git` remote - v               |display remote URL 
+|`git` branch -a                |list branches
+|`git` status                   |display changes and staging
+|`git` log                      |view commit history and hashes
 
 
 ## common tasks
-| Command                             | Action
-| :--                                 | :-- 
-|`git` branch *branch-name*           |create branch with *branch-name*
-|`git` checkout *branch-name*         |perform changes in *branch-name*
-|`git` checkout -b *branch-name*      |create and checkout a new branch
-|`git` add -A                         |add all modified files to staging
-|`git` commit -m "*message*"          |commits the files in staging
-|`git` push -u origin *branch-Name*   |
-|`git` push --set-upstream origin master |
-|`git` checkout master                |
-|`git` pull origin master             |
-|`git` merge *branch-name*            |
-|`git` branch -d *branch-name*        | 
-|`git` push origin --delete *branch-name* |
-|`git` push origin master             |
+### navigating
+| Command                       | Action
+| :--                           | :-- 
+|`git` branch *name*            |create branch with *name*
+|`git` branch -d *name*         |delete branch *name*
+|`git` checkout *name*          |perform changes in *name*
+|`git` checkout -b *name*       |create and checkout a new branch
+|`git` checkout master          |
+|`git` reset HEAD^1             |move HEAD back 1 commit (note you can't push from this: see `revert`)
+|`git` revert *hash*            |undoes changes made since *hash* and _then_ commits (to allow for push)
+|`git` pull origin master       |
+|`git` merge *name*             |merge current (checked out) branch with *name*
+|`git` diff                     |see the line by line differences between local and repo
+
+
+### staging committing and pushing
+|`git` add -A                       |add all modified files to staging
+|`git` tag *name*                   |label (tag) the current commit as *tag*
+|`git` commit -m "*message*"        |commits the files in staging
+|`git` push origin --delete *name*  |push to origin and delete branch *name*
+|`git` push origin master           |push to origin the branch *master*
+|`git` push -u origin *name*        |push to origin the branch *name* and set origin as upstream
+|`git` push --set-upstream origin master  |see above
+
+
+
 
 ## typical workflow
-| Task                               | Command
-| :--                                | :-- 
-|create new branch to make edits     |`git` checkout -b *new-branch*
-|add edits to staging and commit     |`git` add .
-|                                    |`git` commit -m "*commit message*"
-|move to master and update           |`git` checkout master
-|                                    |`git` pull
-|merge branch with updated master    |`git` merge *branch-name*
-|delete working branch               |`git` branch -d *branch-name*
-|push updated master to remote repo  |`git` push origin master
+| Task                                 | Command
+| :--                                  | :-- 
+|create new branch to make edits       |`git` checkout -b *new-branch*
+|add edits to staging and commit       |`git` add .
+|                                      |`git` commit -m "*commit message*"
+|move to master and update             |`git` checkout master
+|                                      |`git` pull
+|merge branch with updated master      |`git` merge *branch-name*
+|delete working branch                 |`git` branch -d *branch-name*
+|push updated master to remote repo    |`git` push origin master
 
 ## Update a forked repo on GitHub
 As your fork only exists on GitHub, and GitHub does not have tools for doing merges through the web interface, you must do the upstream merge locally and then push the changes back to your fork.
@@ -57,6 +68,18 @@ As your fork only exists on GitHub, and GitHub does not have tools for doing mer
 1. `git` checkout master 
 1. `git` rebase upstream/master
 1. `git` push -f origin master
+
+### Jim Parker's recipe
+
+```bash
+git checkout master
+git fetch upstream
+git reset --hard upstream/master
+git push origin master --force
+```
+
+Creates new branches for tasks.
+Push branches to remote fork (avoid merging master).
 
 
 ## What is a commit?
