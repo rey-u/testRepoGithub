@@ -101,3 +101,5 @@ Source: [gitglossary][1]
 `git pull` ~= `git fetch` + `git merge FETCH_HEAD`  
 `git pull` merges into the _current_ branch  
 `git push` does not automatically merge
+
+[Click here](HINAKO) to go to the **Hinako** header
