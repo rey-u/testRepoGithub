@@ -1,5 +1,7 @@
 # testRepoGithub
 
+## HINAKO
+
 ## getting started
 | Command                                  | Action 
 | :--                                      | :--
@@ -37,6 +39,8 @@
 
 
 ### staging committing and pushing
+| Command                           | Action
+| :--                               | :-- 
 |`git` add -A                       |add all modified files to staging
 |`git` tag *name*                   |label (tag) the current commit as *tag*
 |`git` commit -m "*message*"        |commits the files in staging
