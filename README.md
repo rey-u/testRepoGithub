@@ -102,4 +102,4 @@ Source: [gitglossary][1]
 `git pull` merges into the _current_ branch  
 `git push` does not automatically merge
 
-[Click here](HINAKO) to go to the **Hinako** header
+[Click here](#HINAKO) to go to the **Hinako** header
