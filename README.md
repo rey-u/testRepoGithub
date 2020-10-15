@@ -44,12 +44,11 @@
 |`git` add -A                       |add all modified files to staging
 |`git` tag *name*                   |label (tag) the current commit as *tag*
 |`git` commit -m "*message*"        |commits the files in staging
+|`git` commit --amend               |modify the previous commit with the files in staging
 |`git` push origin --delete *name*  |push to origin and delete branch *name*
 |`git` push origin master           |push to origin the branch *master*
 |`git` push -u origin *name*        |push to origin the branch *name* and set origin as upstream
 |`git` push --set-upstream origin master  |see above
-
-
 
 
 ## typical workflow
