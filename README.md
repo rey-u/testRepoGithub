@@ -10,6 +10,7 @@
 |`git` init                                |initialize a git directory
 |`git` remote add origin *URL*             |create a new remote called origin
 
+![Sleepy monsters](https://media1.tenor.com/images/5fc4f5e439339c094705157c1313df16/tenor.gif?itemid=14644166 "Sleepy girl from Monsters, Inc.")
 
 ## informational
 | Command                       | Action
