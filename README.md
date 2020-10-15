@@ -51,6 +51,8 @@
 |`git` push --set-upstream origin master  |see above
 
 
+![Dancing Pikachu](https://media.tenor.com/images/61963600f685f92d0d7efb4eb4ea72c5/tenor.gif "Dancin' 'chu)
+
 ## typical workflow
 | Task                                 | Command
 | :--                                  | :-- 
