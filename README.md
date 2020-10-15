@@ -51,11 +51,7 @@
 |`git` push --set-upstream origin master  |see above
 
 
-<<<<<<< HEAD
 ![Dancing Pikachu](https://media.tenor.com/images/61963600f685f92d0d7efb4eb4ea72c5/tenor.gif "Dancin' 'chu")
-=======
-![Dancing Pikachu](https://media.tenor.com/images/61963600f685f92d0d7efb4eb4ea72c5/tenor.gif "Dancin' 'chu)
->>>>>>> 5ddca3dce8bb7288fd5c9faa56e3e30a5b1fe95d
 
 ## typical workflow
 | Task                                 | Command
