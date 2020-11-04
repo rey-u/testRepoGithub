@@ -23,7 +23,7 @@ Design is the second phrase of the content development process, occurring after 
 
 Designing content takes into consideration how the customer might arrive at the content (SEO), what the structure of the content will look like, and the similarities and dependencies with other, pre-existing content.
 
-## Content planning tasks
+## Content design tasks
 
 > [!NOTE]
 > Links in the task column below go to detailed task documentation for that entry.
