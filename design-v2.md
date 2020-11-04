@@ -16,7 +16,7 @@ This article identifies and defines the tasks that comprise content designing. I
 
 The purpose of this phase is to map out content development so as to prepare the content for effective execution of the following phase: writing.
 
-![Article creation process - Design](./media/content-dev/1-design.svg)
+![Article creation process - Design](./media/content-dev/2-design.svg)
 <!--- this image should be 3 to 5 process buckets that reflect the work of planning --->
 
 Design is the second phrase of the content development process, occurring after planning. Once the customer need and content expectations are established in the previous phase, contributors should produce a preliminary design of the content.
