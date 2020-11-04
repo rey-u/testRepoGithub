@@ -7,7 +7,7 @@ ms.date: 11/03/2020
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: internal-contributor-guide
-# customer intent: As a new part-time contributor who is unfamiliar with the design phase of content develop I need to know what steps or tasks are involved so I can make sure I've done the work to plan a quality content contribution.
+# customer intent: As a new part-time contributor who is unfamiliar with the design phase of content develop I need how to design my content so it maximally aligns with existing content and addresses customer needs.
 ---
 
 # Designing your content
