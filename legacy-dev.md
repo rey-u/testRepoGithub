@@ -363,3 +363,84 @@ Non-writers might want a conceptual review of how new content fits into a docume
 
 ## MAINTAIN
 ---
+
+---
+title: The maintain phase for contributing to customer facing content
+description: This article describes the maintenance phase of creating customer facing content
+author: rey-u
+ms.author: v-rurias
+ms.date: 10/30/2020
+ms.prod: non-product-specific
+ms.topic: contributor-guide
+ms.custom: internal-contributor-guide
+# customer intent:
+---
+
+
+# Maintaining your content
+![Article creation process - Maintain](./media/content-dev/5-maintain.svg)
+
+|Subtask|Begins with|Ends by
+| :-- | :-- | :-- 
+|Receive customer feedback||
+|Triage customer feedback|After an issue is received for an article|When the feedback/issue is properly triaged as per the process for specific article.
+|Address customer feedback|When internal/external feedback/issues is received and triaged.|When your PR with the updates addressing the feedback is accepted/merged in the relevant repo.
+|Optimize content|The content is published for a while.|
+|Validate freshness|The content is published on the live site.|When you have reviewed the entire article and updated the ms.date metadata.
+|Retire out-of-date content||
+|Align to best practice||
+|Review non-performing content||
+|Address content issues||
+
+
+https://review.docs.microsoft.com/help/contribute/freshness
+
+## Receive customer (or internal) feedback
+- https://review.docs.microsoft.com/help/contribute/process-pulse-overview (Azure Pulse customer feedback program)
+- https://review.docs.microsoft.com/help/contribute/process-psat-overview (Azure PSAT survey program)
+- https:/review.docs.microsoft.com/help/contribute/github-reports (GitHub issues)
+
+## Triage customer (or internal) feedback
+- https://review.docs.microsoft.com/help/contribute/contribute-customer-feedback-azure-cxp-process?branch=master (Azure GitHub issues triage process)
+- https://review.docs.microsoft.com/help/contribute/process-pulse-overview?branch=master#process-overview(Azure Pulse feedback triage)
+- https://review.docs.microsoft.com/help/contribute/powerbi-docs?branch=master#visual-studio-work-item-tracking (Power BI triage)
+
+## Address customer (or internal) feedback
+- https://review.docs.microsoft.com/help/contribute/contribute-how-to-manage-act-bp-actionable-verbatims?branch=master(Address verbatim customer feedback)
+- https://review.docs.microsoft.com/help/contribute/contribute-customer-feedback-azure-authors-process?branch=master (Address Azure GitHub issues)
+- https://review.docs.microsoft.com/help/contribute/process-pulse-overview?branch=master#process-overview (Azure Pulse customer feedback)
+
+## Optimize content
+- https://review.docs.microsoft.com/help/contribute/contribute-how-to-perform-customer-research (How to perform customer research)
+- https://review.docs.microsoft.com/help/contribute/contribute-how-to-choose-a-research-method (Choose customer research methodology)
+- https://review.docs.microsoft.com/help/contribute/contribute-how-to-do-customer-interviews (Conduct customer interviews)
+- https://review.docs.microsoft.com/help/contribute/contribute-how-to-do-surveys (Conduct survey)
+- https://review.docs.microsoft.com/help/contribute/process-pulse-overview (Azure Pulse customer feedback program)
+- https://review.docs.microsoft.com/help/contribute/process-psat-overview (Azure PSAT survey program)
+- https://review.docs.microsoft.com/help/contribute/how-to-hackadoc (Host hack-a-doc)
+- https://review.docs.microsoft.com/help/contribute/contribute-how-to-manage-using-experiments (Conduct A/B testing; Content in this article is deprecated; need to find out updated information and update guidance)
+
+Don't simply "maintain" your content by keeping it up-to-date. Monitor and evaluate your content. Look at the SEO, discoverability, feedback, issues (through the "Verbatims?"). Test and validate your content with user studies and customer research ("dev div"). Look at the performance and make decisions about what you need to do to improve those aspects of the content. Finding opportunities to extend and improve content can trigger another round of planning and often loops you back to the beginning of this process.
+
+
+## Validate freshness
+- https://review.docs.microsoft.com/help/contribute/freshness
+
+## Retire out-of-date content
+- https://review.docs.microsoft.com/help/contribute/retire-rename-articles (Retire, remove, or rename an article)
+- https://review.docs.microsoft.com/help/contribute/archive-tool-docs-portal (Archive articles using Docs portal)
+- https://review.docs.microsoft.com/help/contribute/archive-retire-guidelines (Archive and content removal guidelines)
+- https://review.docs.microsoft.com/help/contribute/archive-repo-docset (Archive a docset)
+- https://review.docs.microsoft.com/help/contribute/redirect-articles (Redirect obsolete articles)
+- https://review.docs.microsoft.com/help/contribute/retire-rename-many-articles (Refactor or restructure multiple articles)
+- https://review.docs.microsoft.com/help/contribute/rename-product-service (Rename product/service)
+
+## Align to best practices
+## Review nonperforming content
+- https://review.docs.microsoft.com/help/contribute/troubleshoot-underperforming-articles (Troubleshoot non-performing articles)
+- https://review.docs.microsoft.com/help/contribute/metrics-content-performance
+- https://review.docs.microsoft.com/help/contribute/github-reports
+- https://review.docs.microsoft.com/help/contribute/metrics-documentation-reference
+- https://review.docs.microsoft.com/help/contribute/contribute-how-to-manage-data-other
+
+## Address content issues
