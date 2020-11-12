@@ -9,6 +9,9 @@
 |`git` config --global user.email *email*  |set user email
 |`git` init                                |initialize a git directory
 |`git` remote add origin *URL*             |create a new remote called origin
+|`git` remote add upstream *URL*           |link to upstream
+|`git` remote show *origin/upstream*       |show remote settings
+
 
 ![Sleepy monsters](https://media1.tenor.com/images/5fc4f5e439339c094705157c1313df16/tenor.gif?itemid=14644166 "Sleepy girl from Monsters, Inc.")
 
