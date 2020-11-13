@@ -91,7 +91,7 @@ Creates new branches for tasks.
 Push branches to remote fork (avoid merging master).
 
 
-####Remove branches from closed, merged PRs
+#### Remove branches from closed, merged PRs
 ```bash
 git branch --merged | foreach {$_.Trim()} | where {$_.StartsWith("*") -eq $false -and $_.ToLower() -ne "master"} | foreach { write-host Remove branch $_; Invoke-Expression "git branch -d $_" | Out-Null; write-host "" }
 ```
