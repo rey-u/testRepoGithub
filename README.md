@@ -91,6 +91,12 @@ Creates new branches for tasks.
 Push branches to remote fork (avoid merging master).
 
 
+####Remove branches from closed, merged PRs
+```bash
+git branch --merged | foreach {$_.Trim()} | where {$_.StartsWith("*") -eq $false -and $_.ToLower() -ne "master"} | foreach { write-host Remove branch $_; Invoke-Expression "git branch -d $_" | Out-Null; write-host "" }
+```
+
+
 ## What is a commit?
    commit  
    (n) A single point in the Git history; the entire history of a project is represented as a set of interrelated commits. The word "commit" is often used by Git in the same places other revision control systems use the words "revision" or "version". Also used as a short hand for commit object.  
