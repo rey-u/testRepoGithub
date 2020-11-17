@@ -1,7 +1,5 @@
 # testRepoGithub
 
-## HINAKO
-
 ## getting started
 | Command                                  | Action 
 | :--                                      | :--
