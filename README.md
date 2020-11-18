@@ -1,7 +1,8 @@
 # testRepoGithub
 
 ## getting started
-| Command                                  | Action 
+
+| Command                                  | Action
 | :--                                      | :--
 |`git` config --global user.name *name*    |set user name
 |`git` config --global user.email *email*  |set user email
@@ -10,24 +11,25 @@
 |`git` remote add upstream *URL*           |link to upstream
 |`git` remote show *origin/upstream*       |show remote settings
 
-
 ![Sleepy monsters](https://media1.tenor.com/images/5fc4f5e439339c094705157c1313df16/tenor.gif?itemid=14644166 "Sleepy girl from Monsters, Inc.")
 
 ## informational
+
 | Command                       | Action
 | :--                           | :--
 |`git` --version                |display git version
 |`git` config --global --list   |list config settings
-|`git` remote - v               |display remote URL 
+|`git` remote - v               |display remote URL
 |`git` branch -a                |list branches
 |`git` status                   |display changes and staging
 |`git` log                      |view commit history and hashes
 
-
 ## common tasks
+
 ### navigating
+
 | Command                       | Action
-| :--                           | :-- 
+| :--                           | :--
 |`git` branch *name*            |create branch with *name*
 |`git` branch -d *name*         |delete branch *name*
 |`git` checkout *name*          |perform changes in *name*
@@ -39,10 +41,10 @@
 |`git` merge *name*             |merge current (checked out) branch with *name*
 |`git` diff                     |see the line by line differences between local and repo
 
-
 ### staging committing and pushing
+
 | Command                           | Action
-| :--                               | :-- 
+| :--                               | :--
 |`git` add -A                       |add all modified files to staging
 |`git` tag *name*                   |label (tag) the current commit as *tag*
 |`git` commit -m "*message*"        |commits the files in staging
@@ -52,12 +54,12 @@
 |`git` push -u origin *name*        |push to origin the branch *name* and set origin as upstream
 |`git` push --set-upstream origin master  |see above
 
-
 ![Dancing Pikachu](https://media.tenor.com/images/61963600f685f92d0d7efb4eb4ea72c5/tenor.gif "Dancin' 'chu")
 
 ## typical workflow
+
 | Task                                 | Command
-| :--                                  | :-- 
+| :--                                  | :--
 |create new branch to make edits       |`git` checkout -b *new-branch*
 |add edits to staging and commit       |`git` add .
 |                                      |`git` commit -m "*commit message*"
@@ -68,11 +70,12 @@
 |push updated master to remote repo    |`git` push origin master
 
 ## Update a forked repo on GitHub
+
 As your fork only exists on GitHub, and GitHub does not have tools for doing merges through the web interface, you must do the upstream merge locally and then push the changes back to your fork.
 
 1. `git` remote add upstream *URL*
 1. `git` fetch upstream
-1. `git` checkout master 
+1. `git` checkout master
 1. `git` rebase upstream/master
 1. `git` push -f origin master
 
@@ -88,14 +91,14 @@ git push origin master --force
 Creates new branches for tasks.
 Push branches to remote fork (avoid merging master).
 
-
 #### Remove branches from closed, merged PRs
+
 ```bash
 git branch --merged | foreach {$_.Trim()} | where {$_.StartsWith("*") -eq $false -and $_.ToLower() -ne "master"} | foreach { write-host Remove branch $_; Invoke-Expression "git branch -d $_" | Out-Null; write-host "" }
 ```
 
+## What is a commit
 
-## What is a commit?
    **commit**  
    (*n*) A single point in the Git history; the entire history of a project is represented as a set of interrelated commits. The word "commit" is often used by Git in the same places other revision control systems use the words "revision" or "version". Also used as a short hand for commit object.  
    (*v*) Storing a new snapshot of the project’s state in the Git history by creating a new commit representing the current state of the index and advancing HEAD to point at the new commit.  
@@ -103,12 +106,10 @@ Source: [gitglossary][1]
 
 [1]: https://git-scm.com/docs/gitglossary
 
-
 ![git commands conceptualization](git-commands.png)
-
 
 `git pull` ~= `git fetch` + `git merge FETCH_HEAD`  
 `git pull` merges into the _current_ branch  
 `git push` does not automatically merge
 
-[Go to the getting-started header](#Hgetting-started)
+[Go to the getting-started header](#getting-started)
