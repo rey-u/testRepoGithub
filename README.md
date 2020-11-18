@@ -96,9 +96,9 @@ git branch --merged | foreach {$_.Trim()} | where {$_.StartsWith("*") -eq $false
 
 
 ## What is a commit?
-   commit  
-   (n) A single point in the Git history; the entire history of a project is represented as a set of interrelated commits. The word "commit" is often used by Git in the same places other revision control systems use the words "revision" or "version". Also used as a short hand for commit object.  
-   (v) Storing a new snapshot of the project’s state in the Git history by creating a new commit representing the current state of the index and advancing HEAD to point at the new commit.  
+   **commit**  
+   (*n*) A single point in the Git history; the entire history of a project is represented as a set of interrelated commits. The word "commit" is often used by Git in the same places other revision control systems use the words "revision" or "version". Also used as a short hand for commit object.  
+   (*v*) Storing a new snapshot of the project’s state in the Git history by creating a new commit representing the current state of the index and advancing HEAD to point at the new commit.  
 Source: [gitglossary][1]
 
 [1]: https://git-scm.com/docs/gitglossary
@@ -111,4 +111,4 @@ Source: [gitglossary][1]
 `git pull` merges into the _current_ branch  
 `git push` does not automatically merge
 
-[Click here](#HINAKO) to go to the **Hinako** header
+[Go to the getting-started header](#Hgetting-started)
